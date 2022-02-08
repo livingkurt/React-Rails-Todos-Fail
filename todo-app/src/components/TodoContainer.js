@@ -41,6 +41,7 @@ const TodosContainer = (props) => {
 	};
 
 	const updateTodo = (e, id) => {
+		console.log({ checked: e.target.checked });
 		axios
 			.put(`/api/v1/todos/${id}`, { todo: { done: e.target.checked } })
 			.then((response) => {
