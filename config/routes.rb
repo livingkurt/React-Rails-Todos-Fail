@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'todos#index'
+  root 'application#index'
   scope '/api/v1' do
     resources :todos
   end
